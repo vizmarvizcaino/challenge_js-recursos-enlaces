@@ -1,0 +1,87 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-family: helvetica, sans-serif;
+}
+
+.contenedor-busqueda {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.50rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1.20rem;
+}
+
+input {
+  width: 20%;
+  height: 4vh;
+  font-size: 1rem;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+span {
+  color: black;
+  font-size: 2rem;
+}
+
+.tarjetas-usuarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: .85rem;
+  margin-top: 1rem;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.tarjeta .titulo {
+  margin-bottom: .25rem;
+}
+
+.tarjeta .descripcion {
+  text-align: center;
+  width: 80%;
+  font-size: .8rem;
+  color: #777;
+}
+
+.image {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.image:hover {
+  cursor: pointer;
+}
